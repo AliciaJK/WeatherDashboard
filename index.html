@@ -4,106 +4,62 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Alicia Krolak - Portfolio</title>
+    <title>Weather</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/reset.css" />
     <link rel="stylesheet" href="./assets/style.css" />
 
 
 </head>
-
-<div class="bg"></div>
-<div class="container2"></div>
-  <div class="headerBox" > 
-    <header>
-        <h1>Alicia Krolak</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-  </div>
-
-</div>
-
-
 <body>
-    
+        <!-- Weather Search -->
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m6">
+                    <!-- Weather Search Title -->
+                    <h5 class="weather-desc center">City Weather Search</h5>
+                    <div class="row">
+                        <!-- Search City Input -->
+                        <div class="col s12">
+                            <div class="input-field center">
+                                <input id="entered-city" type="search" placeholder="Enter a city">
+                                <button type="submit" id="weather-button"class="input-group-addon btn white-text">Search</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Display Weather Container -->
+                    <div class="row" id="weather-display">
+                        <div class="col s12">
+                            <div class="card weather-panel">
+                                <div class=" card-body weather-header">
+                                    <!-- Weather Icon -->
+                                    <img id="w-icon">
+                                    <!-- City Name -->
+                                    <h3 id="city-name"></h3>
+                                </div>
+                                <!-- Weather Conditions -->
+                                <div class="weather-info">
+                                    <h5 id="date"></h5>
+                                    <p id="temp-desc"></p>
+                                    <p id="current-temp"></p>
+                                    <p id="feels-temp"></p>
+                                    <p id="current-humidity"></p>
+                                    <p id="current-windspeed"></p>
 
-    <section class="mainBio" id="about">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                   
+            </div>
+        </div>
+         <!-- javascript -->
+         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+         <script type="text/javascript" src="./assets/script.js"></script>   
 
-        <img id="bioImage" src="https://carleton.ca/ace/wp-content/uploads/Alicia-K--200x200.jpg"
-            alt="Photo of Alicia Krolak">
-        <br>
-        <br>
-        <p>Welcome to my portfolio! I am a Cognitive Science graduate from Carleton University in 2019 with a
-            specialization in cognition and psychology and a minor in psychology. </p>
-        <p>I have a background in aviation with my glider and private pilot license.</p>
-        <p>I have worked for NAV CANADA and NASA, done research in avaition and development in SharePoint and Power BI.
-        </p>
-        <br>
-        <br>
-
-
-<!-- resume button-->
-    
-        
-        <a  class="resume" target="_blank" href="https://docs.google.com/document/d/1bv0sZlwjcShO83H3GZTN6gry_xXh7EE3nlp2iOCtWA0/edit?usp=sharing">Resume</a>
-    
-    </section>
-
-
-
-<!-- all cards below -->
-
-    <main class="allCards" id="projects">
-        
-
-<!-- project 1 card, links will connect to my projects & websites-->
-        <section class="card1">
-         <header><a  target="_blank" href="https://github.com/AliciaJK/Homework1-SiteOptimization">Code optimization</a></header>
-        </section>
-        
-<!-- project 2 card, links will connect to my projects & websites-->
-        <section class="card2">
-            <header><a  target="_blank" href="https://github.com/AliciaJK/DroneAcademyOttawa">*Placeholder* Drone Academy Website</a></header>
-        </section>
-<!-- project 3 card, links will connect to my projects & websites-->
-        <section class="card3">
-            <header><a  target="_blank" href="https://github.com/AliciaJK/CardsByAliK">*Placeholder* Cards by Ali K Website</a></header>
-        </section>
-<!-- project 4 card, links will connect to my projects & websites-->
-        <section class="card4">
-            <header><a  target="_blank" href="#">Project 4 Placeholder</a></header>
-        </section>
-<!-- project 5 card, links will connect to my projects & websites-->
-        <section class="card5">
-            <header><a  target="_blank" href="#">Project 5 Placeholder</a></header>
-        </section>
-
-<!-- project 6 card, links will connect to my projects & websites-->
-        <section class="card6">
-            <header><a  target="_blank" href="#">Project 6 Placeholder</a></header>
-        </section>
-
-
-
-    </main>
-
-    <footer id="footer">
-    
-        <section id="contact-info">
-            <h2 id="contact">Contact Me</h2>
-            <ul>
-                <li><a href="mailto:aliciajkrolak@gmail.com">Email</a></li>
-                <li><a href="https://www.linkedin.com/in/aliciakrolak/">LinkedIn</a></li>
-                <li><a href="http://www.github.com/aliciajk">Github</a></li>
-            </ul>
-        </section>
-    </footer>
-    
+       
 
 </body>
 
