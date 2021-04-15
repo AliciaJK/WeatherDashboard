@@ -1,0 +1,66 @@
+.weather-header h3 {
+  position: relative;
+}
+
+.weather-desc{
+  color: #000000;
+  font-size: 28px;
+}
+
+.weather-info p, p{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#weather-button, #word-button {
+  color: #000000;
+  border-radius: 15px;
+  margin: 10px;
+  background-color: #1619e7cc;
+  font-family: 'Germania One', cursive;
+}
+
+/* #weather-display,  #word-display {
+  display: none;
+} */
+
+.weather-panel, .word-panel {
+  padding: 24px;
+  margin: 0.5rem 0 1rem 0;
+  border-radius: 2px;
+  background-color: #1720a136;
+  border: 0.5px solid rgb(255, 255, 255);
+  box-shadow: 1px 1px 3px rgb(59 51 51);
+}
+
+.weather-panel {
+  padding-bottom: 163.5px;
+}
+
+.covid-header h3 {
+  position: relative;
+  height: 75px;
+  width: 75px;
+}
+
+.word-info {
+  font-size: 16px;
+}
+
+#entered-city, #entered-country, #entered-word {
+  border: 0.5px solid #808080;
+  box-shadow: 1px 1px 3px rgb(59, 51, 51);
+  padding-left: 10px;
+  background-color: #1511e959;
+  font-weight: bold;
+  width: 100%;
+}
+
+#entered-city::placeholder, #entered-country::placeholder, #entered-word::placeholder  {
+  color: black;
+}
+
+h5, h4 ,h2 {
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 2px;
+}

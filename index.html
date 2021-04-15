@@ -6,16 +6,23 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Weather</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
     <link rel="stylesheet" href="./assets/reset.css" />
     <link rel="stylesheet" href="./assets/style.css" />
 
 
 </head>
 <body>
+    <!-- Nav bar (bootstrap) -->
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand">Weather Dashboard</a>
+        <p id="todaysDate"> Today is: </p>
+ 
+      </nav>
         <!-- Weather Search -->
         <div class="container">
             <div class="row">
-                <div class="col s12 m6">
+                <div class="col-sm">
                     <!-- Weather Search Title -->
                     <h5 class="weather-desc center">City Weather Search</h5>
                     <div class="row">
@@ -29,7 +36,7 @@
                     </div>
                     <!-- Display Weather Container -->
                     <div class="row" id="weather-display">
-                        <div class="col s12">
+                        <div class="col">
                             <div class="card weather-panel">
                                 <div class=" card-body weather-header">
                                     <!-- Weather Icon -->
@@ -47,6 +54,58 @@
                                     <p id="current-windspeed"></p>
 
                                 </div>
+
+                                <!-- 5 days of the week -->
+                                <div class="weather-info">
+                                    <h5 id="date"></h5>
+                                    <p id="temp-desc"></p>
+                                    <p id="current-temp"></p>
+                                    <p id="feels-temp"></p>
+                                    <p id="current-humidity"></p>
+                                    <p id="current-windspeed"></p>
+                                    <!-- <p id="ux-index"></p> -->
+
+                                </div>
+                                <div class="weather-info">
+                                    <h5 id="date"></h5>
+                                    <p id="temp-desc"></p>
+                                    <p id="current-temp"></p>
+                                    <p id="feels-temp"></p>
+                                    <p id="current-humidity"></p>
+                                    <p id="current-windspeed"></p>
+                                    <!-- <p id="ux-index"></p> -->
+
+                                </div>
+                                <div class="weather-info">
+                                    <h5 id="date"></h5>
+                                    <p id="temp-desc"></p>
+                                    <p id="current-temp"></p>
+                                    <p id="feels-temp"></p>
+                                    <p id="current-humidity"></p>
+                                    <p id="current-windspeed"></p>
+                                    <!-- <p id="ux-index"></p> -->
+
+                                </div>
+                                <div class="weather-info">
+                                    <h5 id="date"></h5>
+                                    <p id="temp-desc"></p>
+                                    <p id="current-temp"></p>
+                                    <p id="feels-temp"></p>
+                                    <p id="current-humidity"></p>
+                                    <p id="current-windspeed"></p>
+                                    <!-- <p id="ux-index"></p> -->
+
+                                </div>
+                                <div class="weather-info">
+                                    <h5 id="date"></h5>
+                                    <p id="temp-desc"></p>
+                                    <p id="current-temp"></p>
+                                    <p id="feels-temp"></p>
+                                    <p id="current-humidity"></p>
+                                    <p id="current-windspeed"></p>
+                                    <!-- <p id="ux-index"></p> -->
+
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -58,7 +117,7 @@
          <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
          <script type="text/javascript" src="./assets/script.js"></script>   
-
+         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
        
 
 </body>
